@@ -1,0 +1,27 @@
+# Ignore environment variable files
+.env
+
+# Ignore log files
+*.log
+
+# Ignore Python bytecode files
+*.pyc
+*.pyo
+__pycache__/
+
+# Ignore node_modules (for JavaScript/Node.js)
+node_modules/
+
+# Ignore specific folders
+data/
+temp/
+
+# macOS specific files
+.DS_Store
+
+# Ignore backup files
+*.bak
+
+# Ignore virtual environment
+myenv/
+
