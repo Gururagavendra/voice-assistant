@@ -16,9 +16,9 @@ if __name__ == "__main__":
         # torch.cuda.empty_cache()
 
         # wait for wake word command and start listening
-        if True:
+        if listen_for_wake_word():
         # if listen_for_wake_word():
-            # speak("System Initiating, yes master how can i help you today")
+            speak("System Initiating, yes master how can i help you today")
             command = realtime_transcribe()
             print("Command: ", command)
 
@@ -35,7 +35,7 @@ if __name__ == "__main__":
 
                     response = query_llm(command)
                     print(f"LLM Response: {response}")
-                    # speak(response)
+                    speak(response)
 
                     # # Send command to device agent
                     # execution_result = execute_device_command(response)
